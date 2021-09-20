@@ -5,7 +5,8 @@
   <div class="landing-scroll">
     <div class="title-cont">
       <div class="title-ban">
-        <%= cl_image_tag("bsbddzrt2ebbtbgqx19e") %>
+        <%= "#{Event.last.name}" %>
+        <%#= cl_image_tag("bsbddzrt2ebbtbgqx19e") %>
       </div>
       <div class="next-sign">
         <%= cl_image_tag("uniao8qujoldca1modjl") %>
@@ -17,19 +18,19 @@
       </div>
 
       <div class="invit-txt-top-left">
-        le Chevalier et Madame<br>Bruno de Ghellinck
+        <%= "#{Event.last.first_host_title}" %><br><%= "#{Event.last.first_host_name}" %>
       </div>
 
       <div class="invit-txt-top-right">
-        Monsieur et Madame<br>Bruno Montens
+        <%= "#{Event.last.second_host_title}" %><br><%= "#{Event.last.second_host_name}" %>
       </div>
 
       <div class="invit-txt-top-centre">
-        Vous prient d’assister à la soirée qu’ils donneront pour leur filles
+        <%= "#{Event.last.invitation_sentence}" %>
       </div>
 
       <div class="invit-name-left">
-        <div class="first-letter">E</div>LINE
+        <div class="first-letter"><%= "#{Event.last.first_child_initials.upcase}" %></div><%= "#{Event.last.first_child_display_name.upcase}" %>
       </div>
 
       <div class="invit-logo">
@@ -37,26 +38,26 @@
       </div>
 
       <div class="invit-name-right">
-        <div class="first-letter">A</div>STRID
+        <div class="first-letter"><%= "#{Event.last.second_child_initials.upcase}" %></div><%= "#{Event.last.second_child_display_name.upcase}" %>
       </div>
 
       <div class="invit-date">
-        Le Samedi 15 Février 2020 à 20 heures
+        <%= "#{Event.last.date}" %>
       </div>
 
       <div class="invit-bottom-left">
-        Proximus Lounge
-          <br>Rue Stroobants 51 - 1140 Evere
-          <br>Gsm du jour: 0477 545 145
+        Dress code :
+        <br><%= "#{Event.last.info}" %>
       </div>
 
       <div class="invit-bottom-centre">
-        Diner à 21 heures précises
-          <br>Black tie - Northern Lights Touch
+        RSVP avant le <%= "#{Event.last.response_deadline}" %>
+        <br>Diner à <%= "#{Event.last.diner_time}" %> heures précises
       </div>
 
       <div class="invit-bottom-right">
-        RSVP avant le 15 Janvier
+        GSM du jour:
+        <br><%= "#{Event.last.phone_info}" %>
           <!-- <br>via
           <br>www.site-de-Gauthier.be -->
       </div>
@@ -65,17 +66,17 @@
         LOCALISATION
         <br>_______________________________
         <br>
-        <br>PROXIMUS LOUNGE
+        <%= "#{Event.last.location}" %>
         <br>
         <div class="event_address_small">
-          <%= link_to "#{Event.last.address.upcase}", event_path(Event.last) %>
+          <%= link_to "#{Event.last.address}", event_path(Event.last) %>
         </div>
 
         <div class="event_address_big">
-          <%= "#{Event.last.address.upcase}" %>
+          <%= "#{Event.last.address}" %>
         </div>
 
-        RALLYES B YOU & CRAZY TOGETHER
+        <%= "#{Event.last.rally_name}" %>
       </div>
 
       <div class="localisation-map">
@@ -83,10 +84,6 @@
              style="width: 42vw; height: 34vh; border-radius: 5px;"
              data-markers="<%= @markers.to_json %>"
              data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
-      </div>
-
-      <div class="invit-groups">
-        Groupe1  -  Groupe2  -  Groupe3  -  Groupe4  -  Groupe5
       </div>
 
       <div class="response-cont">
