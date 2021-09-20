@@ -13,15 +13,34 @@ Lift.destroy_all
 Event.destroy_all
 
 
-puts 'The Event Venue'
+puts 'Seeding the Event venue'
 
 # Change the Address and the Event Name for different Parties
 
 event_1 = Event.create!({
-  name: "Northern Lights",
-  address: "PROXIMUS LOUNGE RUE STROOBANTS 51, 1140 EVERE"
+  name: "Les Délices d’Egypte",
+  location: "Chateau Bayard",
+  address: "Rue du Chateau Bayard 4, 5310 Eghezée",
+  rally_name: 'Rallyes "Spirit" & "Get-Up"',
+  info: "Black tie - Egyptian touch",
+  date: "Le vendredi 29 Octobre 2021, à 20 heures",
+  response_deadline: "10 octobre",
+  diner_time: "21",
+  phone_info: "Claire, Maman de Clémence: 0495/ 44 35 78",
+  first_host_title: "Monsieur et Madame",
+  first_host_name: "Marc-Antoine t’Kint de Roodenbeke",
+  first_child_name: "Clémence",
+  first_child_initials: "C",
+  first_child_display_name: "lémence",
+  second_host_title: "Monsieur et Madame",
+  second_host_name: "Arnaud Regout",
+  second_child_name: "Camille",
+  second_child_initials: "C",
+  second_child_display_name: "amille",
+  invitation_sentence: "ont le plaisir de vous inviter à soirée qu’ils donneront pour leurs filles"
 })
 
+puts 'Event created.'
 
 puts 'Creating awesome lifts...'
 
