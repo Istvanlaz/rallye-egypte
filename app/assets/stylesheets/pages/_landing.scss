@@ -12,6 +12,7 @@
   width: 100vw;
 
   z-index: 2;
+
 }
 
 .map-small-bg {
@@ -101,11 +102,16 @@
   align-items: center;
 }
 
-// .title-ban {
-//   width: 100vw;
-//   display: flex;
-//   justify-content: center;
-// }
+.title-ban {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+
+  font-family: $headers-font;
+  font-size: 4rem;
+  color: $light-gray;
+}
 
 .title-ban img {
   width: 75vw;
@@ -130,7 +136,7 @@
   font-size: 1em;
   line-height: 31px;
 
-  color: rgb(226,226,226);
+  color: $text-color;
 }
 
 .invitation-img {
@@ -288,12 +294,10 @@
 
 .invit-bottom-centre {
   position: absolute;
-  // background: blue;
   width: 34vw;
   height: 24vh;
   left: 33vw;
   top: 167vh;
-  padding-bottom: 1.87em;
   z-index: 1100;
 
   display: flex;
@@ -392,19 +396,19 @@
 }
 
 .response-cont a {
-  color: rgb(226,226,226);
+  color: $text-color;
   text-decoration: underline;
   &:hover {
-    color: rgb(226,226,226);
+    color: $text-color;
     text-decoration: none;
   }
 }
 
 .response-btn {
-  color: rgb(226,226,226);
+  color: $text-color;
   text-decoration: underline;
   &:hover {
-    color: rgb(226,226,226);
+    color: $text-color;
     text-decoration: none;
   }
 }
@@ -417,8 +421,8 @@
   height: 90px;
   width: 100vw;
   padding: 29px 0px;
-  background-color: #00020c;
-  color: rgb(226,226,226);
+  background-color: $background-dark;
+  color: $text-color;
   text-align: center;
   font-size: 0.7em;
   z-index: 1000;
@@ -446,6 +450,11 @@
     line-height: 22px;
   }
 
+  .title-ban {
+    font-size: 3rem;
+    text-align: center;
+  }
+
   .invitation-img img {
     height: 170vh;
   }
@@ -465,7 +474,7 @@
   }
 
   .invit-name-left {
-    font-size: 2.7em;
+    font-size: 1.7em;
   }
 
   .invit-logo img {
@@ -474,7 +483,7 @@
   }
 
   .invit-name-right {
-    font-size: 2.7em;
+    font-size: 1.7em;
   }
 
   .invit-date {

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_13_142523) do
+ActiveRecord::Schema.define(version: 2021_09_20_232442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,24 @@ ActiveRecord::Schema.define(version: 2020_09_13_142523) do
     t.datetime "updated_at", null: false
     t.float "latitude"
     t.float "longitude"
+    t.string "location"
+    t.string "rally_name"
+    t.string "info"
+    t.string "date"
+    t.string "phone_info"
+    t.string "diner_time"
+    t.string "response_deadline"
+    t.string "first_host_title"
+    t.string "first_host_name"
+    t.string "first_child_name"
+    t.string "first_child_initials"
+    t.string "first_child_display_name"
+    t.string "second_host_title"
+    t.string "second_host_name"
+    t.string "second_child_name"
+    t.string "second_child_initials"
+    t.string "second_child_display_name"
+    t.string "invitation_sentence"
   end
 
   create_table "landings", force: :cascade do |t|
