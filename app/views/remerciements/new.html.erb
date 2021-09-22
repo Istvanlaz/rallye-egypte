@@ -6,7 +6,7 @@
     <div class="bob-new" id="remerciement-new">
       <div class="container">
         <h5><strong>REMERCIEMENTS</strong></h5>
-        <small>Votre message sera envoyé par mail <br> aux organisateurs de la soirée.</small>
+        <small>Votre message sera envoyé <br> aux organisateurs de la soirée.</small>
         <p>
         <form action="/remerciements" method="post">
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
@@ -14,12 +14,12 @@
             <div class="form-group form_inputs col-sm-6">
               <label for="first_name">PRÉNOM *</label>
               <input type="text" name="remerciement[first_name]" class="form-control form-control-lg"
-                     id="first_name" placeholder="Astrid" autofocus="true" required>
+                     id="first_name" placeholder="Camille" autofocus="true" required>
             </div>
             <div class="form-group form_inputs col-sm-6">
               <label for="family_name">NOM DE FAMILLE *</label>
               <input type="text" name="remerciement[family_name]" class="form-control form-control-lg"
-                     id="family_name" placeholder="Montens" required>
+                     id="family_name" placeholder="Regout" required>
             </div>
           </div>
 
