@@ -6,7 +6,8 @@
     <div class="bob-new" id="reponse-new">
       <div class="container">
         <h5><strong>RÉPONSE</strong></h5>
-        <small>Un mail de confirmation <br> vous sera envoyé.</small>
+        <bold>! Prenez en compte la règlementation COVID ! </bold> <br>
+        <small>Un mail de confirmation vous sera envoyé par mail.</small>
         <p>
         <form action="/reponses" method="post">
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
@@ -14,12 +15,12 @@
             <div class="form-group form_inputs col-sm-6">
               <label for="first_name">PRÉNOM *</label>
               <input type="text" name="reponse[first_name]" class="form-control form-control-lg"
-                     id="first_name" placeholder="Eline" autofocus="true" required>
+                     id="first_name" placeholder="Clémence" autofocus="true" required>
             </div>
             <div class="form-group form_inputs col-sm-6">
               <label for="family_name">NOM DE FAMILLE *</label>
               <input type="text" name="reponse[family_name]" class="form-control form-control-lg"
-                     id="family_name" placeholder="de Ghellinck d'Elseghem" required>
+                     id="family_name" placeholder="t'Kint de Roodenbeke" required>
             </div>
           </div>
           <div class="form-row">
