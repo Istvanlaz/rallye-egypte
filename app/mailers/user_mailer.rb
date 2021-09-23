@@ -11,7 +11,7 @@ class UserMailer < ApplicationMailer
 
     @reponse = params[:reponse]
     p @reponse
-    mail to: 'organisateurs@gmail.com', subject: "Confirmation réponse - Nothern Lights" #changer mail des organisateurs ici manuellement. Après le to:
+    mail to: @reponse.contact, subject: "Confirmation réponse - Les Délices d'Egypte" #changer mail des organisateurs ici manuellement. Après le to:
   end
 
   def welcome
@@ -22,21 +22,21 @@ class UserMailer < ApplicationMailer
 
   def confirmation_participation
     @reponse = params[:reponse]
-    mail to: @reponse.contact, subject: "Confirmation réponse - Nothern Lights"
+    mail to: 'delicesdegypte@gmail.com', subject: "Confirmation réponse - Les Délices d'Egypte"
   end
 
   def remerciements
     @remerciements = params[:remerciements]
-    mail to: 'organisateurs@gmail.com', subject: "Remerciements - Nothern Lights"
+    mail to: 'delicesdegypte@gmail.com', subject: "Remerciements - Les Délices d'Egypte"
   end
 
   def lifts_conducteur
     @passanger = params[:passanger]
-    mail to: @passanger.lift.contact, subject: "Un nouveau passager dans ta voiture ! - Nothern Lights"
+    mail to: @passanger.lift.contact, subject: "Un nouveau passager dans ta voiture ! - Les Délices d'Egypte"
   end
 
   def lifts_passanger
     @passanger = params[:passanger]
-    mail to: @passanger.contact, subject: "Confirmation réservation lift - Nothern Lights"
+    mail to: @passanger.contact, subject: "Confirmation réservation lift - Les Délices d'Egypte"
   end
 end
