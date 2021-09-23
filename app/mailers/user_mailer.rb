@@ -22,7 +22,7 @@ class UserMailer < ApplicationMailer
 
   def confirmation_participation
     @reponse = params[:reponse]
-    mail to: 'delicesdegypte@gmail.com', subject: "Confirmation réponse - Les Délices d'Egypte"
+    mail to: 'delicesdegypte@gmail.com', subject: "Réponse - Les Délices d'Egypte"
   end
 
   def remerciements
