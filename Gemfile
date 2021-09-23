@@ -17,6 +17,7 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'dotenv-rails', groups: [:development, :test]
 # gem 'letter_opener', group: :development
 group :development do
   gem 'better_errors'
