@@ -1,0 +1,21 @@
+.covid_message_cont {
+  position: relative;
+  top: 8vh;
+
+  background-color: $background-dark;
+  color: $text-color-light;
+  height: fit-content;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5vh 12vw 20vh 12vw;
+}
+
+@media screen and (max-width: 750px) {
+
+  .covid_message_cont {
+    height: fit-content;
+    padding: 5vh 5vw 25vh 5vw;
+  }
+
+}
