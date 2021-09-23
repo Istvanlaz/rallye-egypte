@@ -1,14 +1,14 @@
 .lift-cont {
   position: relative;
   top: 8vh;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   bottom: 90px;
   overflow: hidden;
 }
 
 .lift-bg img {
-  height: 82vh;
+  height: 92vh;
   width: 100vw;
   object-fit: cover;
 }
@@ -79,8 +79,9 @@
   align-items: center;
   text-align: center;
   padding: 25px;
-  height: 74vh;
+  height: 78vh;
   width: 42vw;
+  margin-top: 5vh;
   border-radius: 25px;
   box-shadow: inset 0 0 10px #000000;
 }
@@ -94,7 +95,7 @@
 
 .bob-new h5 {
   margin-bottom: 22px;
-  margin-top: 18px;
+  //margin-top: 18px;
 }
 
 .bob-new a {
