@@ -526,6 +526,19 @@
   .lift-cont {
     top: 10vh;
   }
+
+
+  .lift-bg {
+    position: fixed;
+    top: 10vh;
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .lift-bg img {
+    height: 90vh;
+    width: 100vw;
+  }
 }
 
 @media screen and (max-width: 450px) {

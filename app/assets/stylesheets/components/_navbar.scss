@@ -29,7 +29,7 @@
 }
 
 .navbar-links a {
-  color: $text-color;
+  color: $text-color-light;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
@@ -55,13 +55,13 @@
 }
 
 .logo a {
-  color: $text-color;
+  color: $text-color-light;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
   .navbar-item :hover{
     text-decoration: none;
-    color: $text-color;
+    color: $text-color-light;
     cursor: pointer;
   }
 }
@@ -69,7 +69,7 @@
 .burger div {
   width: 25px;
   height: 2px;
-  background-color: $text-color;
+  background-color: $text-color-light;
   margin: 5px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -120,7 +120,7 @@
     display: block;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: $text-color;
+    color: $text-color-light;
   }
 }
 

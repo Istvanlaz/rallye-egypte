@@ -92,7 +92,7 @@
 
 .title-cont {
   position: absolute;
-  top: 8vh;
+  top: 25vh;
   height: 75vh;
   width: 100vw;
   z-index: 10;
@@ -136,7 +136,7 @@
   font-size: 1em;
   line-height: 31px;
 
-  color: $text-color;
+  color: $text-color-light;
 }
 
 .invitation-img {
@@ -145,13 +145,23 @@
   justify-content: center;
 }
 
+.background_dark_small {
+  position: relative;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 6;
+  top: 100vh;
+  height: 190vh;
+  width: 100vw;
+}
+
 .invitation-img img {
   display: block;
   position: absolute;
   width: 100vw;
-  height: 150vh;
+  height: 190vh;
   z-index: 5;
   top: 100vh;
+  object-fit: fill;
 }
 
 .invit-txt-top-left {
@@ -160,7 +170,7 @@
   width: 33vw;
   height: 22vh;
   left: 0px;
-  top: 100vh;
+  top: 120vh;
   z-index: 1100;
 
   display: flex;
@@ -177,7 +187,7 @@
   width: 33vw;
   height: 22vh;
   right: 0px;
-  top: 100vh;
+  top: 120vh;
   z-index: 1100;
 
   display: flex;
@@ -194,7 +204,7 @@
   width: 100vw;
   height: 8vh;
   right: 0px;
-  top: 120vh;
+  top: 140vh;
   z-index: 1100;
 
   display: flex;
@@ -216,7 +226,7 @@
   width: 40vw;
   height: 28vh;
   left: 0px;
-  top: 128vh;
+  top: 148vh;
   z-index: 1100;
 
   font-size: 5em;
@@ -233,7 +243,7 @@
   width: 40vw;
   height: 28vh;
   right: 0px;
-  top: 128vh;
+  top: 148vh;
   z-index: 1100;
 
   font-size: 5em;
@@ -244,13 +254,21 @@
   text-align: center;
 }
 
+.link_from_map {
+  color: $text-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .invit-logo {
   position: absolute;
   // background: blue;
   height: 28vh;
   width: 20vw;
   left: 40vw;
-  top: 128vh;
+  top: 148vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,7 +286,7 @@
   width: 100vw;
   height: 11vh;
   right: 0px;
-  top: 157vh;
+  top: 177vh;
   z-index: 1100;
 
   display: flex;
@@ -283,7 +301,7 @@
   width: 33vw;
   height: 24vh;
   left: 0px;
-  top: 167vh;
+  top: 187vh;
   z-index: 1100;
 
   display: flex;
@@ -297,7 +315,7 @@
   width: 34vw;
   height: 24vh;
   left: 33vw;
-  top: 167vh;
+  top: 187vh;
   z-index: 1100;
 
   display: flex;
@@ -312,28 +330,46 @@
   width: 33vw;
   height: 24vh;
   right: 0px;
-  top: 167vh;
+  top: 187vh;
   z-index: 1100;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: $text-color-light;
+    cursor: text;
+  }
+
+  strong {
+    text-decoration: underline;
+    font-weight: 100;
+    cursor: pointer;
+  }
+}
+
+.invit-bottom-right a strong:hover {
+  text-decoration: none;
 }
 
 .invit-groups {
+  display: none;
   position: absolute;
   // background: red;
   width: 100vw;
   height: 8vh;
   right: 0px;
-  top: 188vh;
+  top: 208vh;
   z-index: 1100;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // text-align: center;
 
   font-size: 0.7em;
 }
@@ -345,7 +381,7 @@
   width: 50vw;
   height: 46vh;
   left: 0px;
-  top: 192vh;
+  top: 212vh;
   z-index: 1100;
 
   display: flex;
@@ -365,7 +401,7 @@
   width: 50vw;
   height: 46vh;
   right: 0px;
-  top: 192vh;
+  top: 212vh;
   z-index: 1100;
 
   display: flex;
@@ -386,7 +422,7 @@
   width: 100vw;
   height: 12vh;
   right: 0px;
-  top: 238vh;
+  top: 258vh;
   z-index: 1100;
 
   display: flex;
@@ -396,36 +432,40 @@
 }
 
 .response-cont a {
-  color: $text-color;
+  color: $text-color-light;
   text-decoration: underline;
   &:hover {
-    color: $text-color;
+    color: $text-color-light;
     text-decoration: none;
   }
 }
 
 .response-btn {
-  color: $text-color;
+  color: $text-color-light;
   text-decoration: underline;
   &:hover {
-    color: $text-color;
+    color: $text-color-light;
     text-decoration: none;
   }
 }
 
 .footer-land {
-  display: block;
+  // display: block;
   position: absolute;
-  left : 0px;
-  top: 250vh;
-  height: 90px;
-  width: 100vw;
-  padding: 29px 0px;
-  background-color: $background-dark;
-  color: $text-color;
-  text-align: center;
-  font-size: 0.7em;
-  z-index: 1000;
+  // left : 0px;
+  top: 277vh;
+  z-index: 6;
+  // height: 90px;
+  // width: 100vw;
+  // padding: 29px 0px;
+  // background-color: $background-dark;
+  // color: $text-color-light;
+  // text-align: center;
+  // font-size: 0.7em;
+  // z-index: 1000;
+  .footer {
+    background-color: transparent;
+  }
 }
 
 
@@ -444,6 +484,10 @@
 }
 
 @media screen and (max-width: 850px) {
+  .title-cont {
+    top: 15vh;
+  }
+
   .invit-cont {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7em;
@@ -455,26 +499,39 @@
     text-align: center;
   }
 
+  .background_dark_small {
+    height: 168vh;
+  }
+
   .invitation-img img {
-    height: 170vh;
+    height: 168vh;
+    object-fit: cover;
   }
 
   .invit-txt-top-left {
+    top: 120vh;
     width: 50vw;
     font-size: 1.3em;
   }
 
   .invit-txt-top-right {
+    top: 120vh;
     width: 50vw;
     font-size: 1.3em;
   }
 
   .invit-txt-top-centre {
     height: 11vh;
+    top: 138vh;
   }
 
   .invit-name-left {
     font-size: 1.7em;
+    top: 143vh;
+  }
+
+  .invit-logo {
+    top: 143vh;
   }
 
   .invit-logo img {
@@ -484,21 +541,22 @@
 
   .invit-name-right {
     font-size: 1.7em;
+    top: 143vh;
   }
 
   .invit-date {
     height: 8vh;
-    top: 154vh;
+    top: 169vh;
   }
 
   .invit-bottom-left {
-    top: 162vh;
+    top: 176vh;
     width: 50vw;
     height: 20vh;
   }
 
   .invit-bottom-right {
-    top: 162vh;
+    top: 176vh;
     width: 50vw;
     height: 20vh;
   }
@@ -508,7 +566,7 @@
     left: 0px;
     width: 100vw;
     height: 16vh;
-    top: 182vh;
+    top: 192vh;
   }
 
   .invit-groups {
@@ -529,12 +587,12 @@
 
   .localisation-text {
     width: 100vw;
-    top: 206vh;
+    top: 196vh;
     height: 48vh;
   }
 
   .response-cont {
-    top: 255vh;
+    top: 235vh;
   }
 
   .response-cont a {
@@ -542,7 +600,20 @@
   }
 
   .footer-land {
-    top: 270vh;
+    top: 254vh;
+    color: $text-color-light;
+
+    a {
+      color: $text-color-light;
+    }
+  }
+
+  .footer-land {
+    z-index: 7;
+    .footer {
+      background-color: transparent;
+      color: $text-color-light;
+    }
   }
 
 }
@@ -551,12 +622,8 @@
 
   .invit-cont {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.6em;
+    font-size: 0.7em;
     line-height: 22px;
-  }
-
-  .response-cont {
-    top: 250vh;
   }
 
 }

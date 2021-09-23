@@ -26,7 +26,7 @@ event_1 = Event.create!({
   date: "Le vendredi 29 Octobre 2021, à 20 heures",
   response_deadline: "10 octobre",
   diner_time: "21",
-  phone_info: "Claire, Maman de Clémence: 0495/ 44 35 78",
+  phone_info: "0495 44 35 78",
   first_host_title: "Monsieur et Madame",
   first_host_name: "Marc-Antoine t’Kint de Roodenbeke",
   first_child_name: "Clémence",

@@ -12,6 +12,28 @@
   white-space: nowrap;
 }
 
+.reponse_title_small {
+  display: none;
+}
+
 .form-row {
   font-size: 0.9em;
+}
+
+.hide_small {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .reponse_title {
+    display: none;
+  }
+
+  .reponse_title_small {
+    display: block;
+  }
+
+  .hide_small {
+    display: block;
+  }
 }

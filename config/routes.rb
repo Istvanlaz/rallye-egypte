@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'landings#index'
   get 'lift_index', to: 'lifts#lift_index'
+  get 'covid', to: 'pages#covid'
   resources :landings, only: [:index, :show], as: :accueil
   resources :reponses, only: [:new, :create]
   resources :pages, only: [:index, :show], as: :pages

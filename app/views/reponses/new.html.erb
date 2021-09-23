@@ -1,14 +1,21 @@
 <div class="lift-cont">
   <div class="lift-bg">
-    <%= cl_image_tag("nrkgbrxhvbqobstcrw64") %>
+    <%= cl_image_tag("sg9i5gxlqrjbdvxwgbr2") %>
   </div>
   <div class="lift-subcont">
     <div class="bob-new" id="reponse-new">
       <div class="container">
         <h5><strong>RÉPONSE</strong></h5>
-        <bold>! Prenez en compte la règlementation COVID ! </bold> <br>
-        <small>Un mail de confirmation vous sera envoyé par mail.</small>
-        <p>
+        <div class="reponse_title">
+          <strong>! Prenez en compte la règlementation <%= link_to "COVID", covid_path %> ! </strong><br>
+          <small>Une confirmation vous sera envoyé par mail.</small>
+        </div>
+        <br>
+        <div class="reponse_title_small">
+          <strong>! Prenez en compte la <br> règlementation <%= link_to "COVID", covid_path %> ! </strong><br>
+          <small>Une confirmation vous sera <br> envoyé par mail.</small>
+        </div>
+        <br>
         <form action="/reponses" method="post">
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
           <div class="form-row">
@@ -26,7 +33,7 @@
           <div class="form-row">
             <div class="form-group form_inputs col-12" id="checkbox_row">
                <input type="checkbox" id="participation_true" name="reponse[participation]" value="true">
-                <label for="participation_true"><span></span>Je serai présent <font size="5">🥳</font></label>
+                <label for="participation_true"><span></span>Je serai présent <font size="5">🎉</font></label>
                 <p>
                <input type="checkbox" id="participation_false" name="reponse[participation]" value="false">
                 <label for="participation_false"><span></span>Je ne pourrai pas assister <font size="5">😔</font></label>
@@ -41,7 +48,7 @@
           <div class="form-row">
             <div class="form-group form_inputs col-12" id="checkbox_row">
                <input type="checkbox" id="covid" name="reponse[covid]">
-                <label for="covid"><span></span>J'ai bien pris connaissance de la règlementation COVID.</label>
+                <label for="covid"><span></span>J'ai bien pris connaissance de la <div class="hide_small"><br></div> règlementation COVID.</label>
             </div>
           </div>
           <div class="form-row">
