@@ -68,24 +68,21 @@
         <%= "#{Event.last.location}" %>
         <br>
         <div class="event_address_small">
-          <%= link_to "#{Event.last.address}", event_path(Event.last) %> <br><br>
+          <%= link_to "#{Event.last.address}", event_path(Event.last) %> <br>
           GPS : route de la Bruyère <br>
-          (± 40 min. de Bruxelles) <br> <br>
+          (± 40 min. de Bruxelles) <br>
           E411 Bruxelles-Namur, <br>
           sortie 12 Eghezée. <br>
           Suivre Eghezée pendant 1.5 km <br>
-          sur la route de la Bruyère (N912). <br> <br>
+          sur la route de la Bruyère (N912). <br><br>
         </div>
 
         <div class="event_address_big">
-          <%= "#{Event.last.address}" %> <br><br>
-          GPS : route de la Bruyère <br>
-          (± 40 min. de Bruxelles) <br> <br>
-          E411 Bruxelles-Namur, <br>
-          sortie 12 Eghezée. <br>
-          Suivre Eghezée pendant 1.5 km <br>
-          sur la route de la Bruyère (N912). <br> <br>
-
+          <%= "#{Event.last.address}" %> <br>
+          GPS : route de la Bruyère (± 40 min. de Bruxelles) <br><br>
+          E411 Bruxelles-Namur, sortie 12 Eghezée. <br>
+          Suivre Eghezée pendant 1.5 km
+          sur la route de la Bruyère (N912). <br><br>
         </div>
 
         <%= "#{Event.last.rally_name}" %>
