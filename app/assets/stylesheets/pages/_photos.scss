@@ -63,7 +63,7 @@
   font-family: 'Oswald', sans-serif;
   font-style:italic;
   font-size: 3em;
-  font-color: white ;
+  color: $text-color-light ;
 }
 
 .text-pictures a {
@@ -80,5 +80,11 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+  }
+
+  .text-pictures {
+    top: 40%;
+    text-align: center;
+    font-size: 2em;
   }
 }
