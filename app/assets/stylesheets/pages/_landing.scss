@@ -390,6 +390,15 @@
   text-align: center;
 }
 
+.event_address_big {
+  font-size: .9em;
+  line-height: 1.7em;
+}
+
+.event_address_small {
+  display: none;
+}
+
 .event_address_small a {
   display: none;
   color: inherit;
@@ -500,11 +509,11 @@
   }
 
   .background_dark_small {
-    height: 168vh;
+    height: 184vh;
   }
 
   .invitation-img img {
-    height: 168vh;
+    height: 184vh;
     object-fit: cover;
   }
 
@@ -578,6 +587,10 @@
     display: none;
   }
 
+  .event_address_small {
+    display: block;
+  }
+
   .event_address_small a {
     display: block;
   }
@@ -588,12 +601,12 @@
 
   .localisation-text {
     width: 100vw;
-    top: 196vh;
+    top: 206vh;
     height: 48vh;
   }
 
   .response-cont {
-    top: 235vh;
+    top: 255vh;
   }
 
   .response-cont a {
@@ -601,7 +614,7 @@
   }
 
   .footer-land {
-    top: 254vh;
+    top: 270vh;
     color: $text-color-light;
 
     a {
