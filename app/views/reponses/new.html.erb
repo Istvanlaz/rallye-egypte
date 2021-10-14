@@ -3,22 +3,24 @@
     <%= cl_image_tag("sg9i5gxlqrjbdvxwgbr2") %>
   </div>
   <div class="lift-subcont">
-    <h3><strong>Désolé, nous n'acceptons plus de réponses à ce jour.</strong></h3>
+    <div class="close_msg_cont">
+      <h3><strong>Désolé, nous n'acceptons plus de réponses à ce jour.</strong></h3>
+    </div>
     <!--<div class="bob-new" id="reponse-new">
       <div class="container">
         <h5><strong>RÉPONSE</strong></h5>
         <div class="reponse_title">
-          <strong>! Tenez compte de la règlementation <%= link_to "COVID", covid_path %> ! </strong><br>
+          <strong>! Tenez compte de la règlementation <%#= link_to "COVID", covid_path %> ! </strong><br>
           <small>Une confirmation vous sera envoyé par mail.</small>
         </div>
         <br>
         <div class="reponse_title_small">
-          <strong>! Prenez en compte la <br> règlementation <%= link_to "COVID", covid_path %> ! </strong><br>
+          <strong>! Prenez en compte la <br> règlementation <%#= link_to "COVID", covid_path %> ! </strong><br>
           <small>Une confirmation vous sera <br> envoyé par mail.</small>
         </div>
         <br>
         <form action="/reponses" method="post">
-          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <%#= hidden_field_tag :authenticity_token, form_authenticity_token %>
           <div class="form-row">
             <div class="form-group form_inputs col-sm-6">
               <label for="first_name">PRÉNOM *</label>
