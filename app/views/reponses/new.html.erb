@@ -3,7 +3,8 @@
     <%= cl_image_tag("sg9i5gxlqrjbdvxwgbr2") %>
   </div>
   <div class="lift-subcont">
-    <div class="bob-new" id="reponse-new">
+    <h3><strong>Désolé, nous n'acceptons plus de réponses à ce jour.</strong></h3>
+    <!--<div class="bob-new" id="reponse-new">
       <div class="container">
         <h5><strong>RÉPONSE</strong></h5>
         <div class="reponse_title">
@@ -39,12 +40,12 @@
                 <label for="participation_false"><span></span>Je ne pourrai pas assister <font size="5">😔</font></label>
             </div>
           </div>
-          <!--<div class="form-row">
+          <div class="form-row">
             <div class="form-group form_inputs col-12" id="checkbox_row">
                <input type="checkbox" id="vegetarian" name="reponse[vegetarian]">
                 <label for="vegetarian"><span></span>Végétarien(ne)</label>
             </div>
-          </div> -->
+          </div>
           <div class="form-row">
             <div class="form-group form_inputs col-12" id="checkbox_row">
                <input type="checkbox" id="covid" name="reponse[covid]">
@@ -71,13 +72,10 @@
           </div>
         </form>
       </div>
-    </div>
+    </div>-->
   </div>
 </div>
 
-<% if Date.today >= Date.new(2021,10,10) %>
-Désolé, nous n'acceptons plus de réponses à ce jour.
 
-<%end%>
 <%= render 'shared/footer' %>
 
